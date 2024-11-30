@@ -1,70 +1,171 @@
-# Getting Started with Create React App
+# User Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This project is a User Management System built using React.js and Material-UI. It features login authentication, user data management, and settings management. The application demonstrates the integration of modern libraries like Formik for form handling, Yup for validation, and Axios for API interactions.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+1. **Login System:**
+   - Secure login functionality using Formik and Yup for form validation.
+   - Handles user authentication and maintains session state.
 
-### `npm start`
+2. **User Management:**
+   - Display user data in a dynamic table.
+   - Add, edit, and delete user data.
+   - Search functionality to filter users based on input.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **Settings:**
+   - Logout functionality to clear user sessions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. **Material-UI Integration:**
+   - Consistent and modern UI using Material-UI components.
+   - Custom theme with primary and secondary colors.
 
-### `npm test`
+5. **Routing:**
+   - Navigation between Home, User Data, and Settings pages using React Router.
+   - Protected routes to ensure only authenticated users access certain pages.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+- **Frontend:** React.js
+- **UI Library:** Material-UI
+- **Routing:** React Router
+- **Form Management:** Formik
+- **Validation:** Yup
+- **HTTP Client:** Axios
+- **Toast Notifications:** React Toastify
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation and Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Ensure you have the following installed:
 
-### `npm run eject`
+- Node.js (>=14.x)
+- npm or yarn
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Steps to Run the Project
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   git clone https://github.com/your-username/user-management.git
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Navigate to the project directory:
 
-## Learn More
+   ```bash
+   cd user-management
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Install dependencies:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-### Code Splitting
+4. Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
 
-### Analyzing the Bundle Size
+5. Open your browser and navigate to:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```
+   http://localhost:3000
+   ```
 
-### Making a Progressive Web App
+## Folder Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
+user-management/
+├── public/           # Public assets
+├── src/              # Source code
+│   ├── components/   # React components
+│   │   ├── Home.js
+│   │   ├── Login.js
+│   │   ├── Settings.js
+│   │   └── UserData.js
+│   ├── App.js        # Main application component
+│   ├── index.js      # Entry point
+│   └── theme.js      # Custom Material-UI theme
+└── package.json      # Project metadata and dependencies
+```
 
-### Advanced Configuration
+## Custom Theme
+The application uses a custom Material-UI theme to ensure a consistent and modern design. The primary color is light blue (#4B95D6), and the secondary color is light gray (#F5F6F9).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Key Components
 
-### Deployment
+### `Login`
+- Handles user authentication.
+- Uses Formik for state management and Yup for validation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### `Home`
+- Welcomes the user after successful login.
+- Provides navigation buttons to access user data and settings.
 
-### `npm run build` fails to minify
+### `UserData`
+- Displays a table of user data fetched from an API.
+- Features add, edit, and delete functionality.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### `Settings`
+- Allows the user to log out and clear session data.
+
+## API
+The application uses `https://jsonplaceholder.typicode.com/users` as a placeholder API to fetch and manage user data.
+
+## Deployment
+The application can be deployed to any hosting platform supporting React.js, such as:
+
+- [Vercel](https://vercel.com/)
+- [Netlify](https://www.netlify.com/)
+- [GitHub Pages](https://pages.github.com/)
+
+### To build for production:
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+## Contributing
+
+1. Fork the repository.
+2. Create a new branch:
+
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+3. Commit your changes:
+
+   ```bash
+   git commit -m "Add your commit message"
+   ```
+
+4. Push to the branch:
+
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+5. Open a pull request.
+
+## Acknowledgments
+
+- [Material-UI](https://mui.com/)
+- [Formik](https://formik.org/)
+- [Yup](https://github.com/jquense/yup)
+- [Axios](https://axios-http.com/)
+- [React Toastify](https://fkhadra.github.io/react-toastify/)
+
