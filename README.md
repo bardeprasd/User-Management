@@ -118,7 +118,7 @@ The application uses a custom Material-UI theme to ensure a consistent and moder
 - Allows the user to log out and clear session data.
 
 ## API
-The application uses `https://jsonplaceholder.typicode.com/users` as a placeholder API to fetch and manage user data.
+The application uses `https://jsonplaceholder.org/users` as a placeholder API to fetch and manage user data.
 
 ## Deployment
 The application can be deployed to any hosting platform supporting React.js, such as:
