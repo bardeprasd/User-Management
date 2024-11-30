@@ -3,6 +3,18 @@
 ## Overview
 This project is a User Management System built using React.js and Material-UI. It features login authentication, user data management, and settings management. The application demonstrates the integration of modern libraries like Formik for form handling, Yup for validation, and Axios for API interactions.
 
+Screen Shots : ![Screenshot 2024-11-30 123920](https://github.com/user-attachments/assets/785cba0a-9241-4f55-b5a7-b71e89b0b1e7)
+               ![Screenshot 2024-11-30 124002](https://github.com/user-attachments/assets/075e3184-f809-4d33-86e6-e4aae7c4f5a3)
+               ![Screenshot 2024-11-30 124022](https://github.com/user-attachments/assets/1b877352-049d-45f8-916e-4b47cf8c5e36)
+               ![Screenshot 2024-11-30 124041](https://github.com/user-attachments/assets/c036212b-ceb3-42d4-8acd-fe28f106411e)
+               ![Screenshot 2024-11-30 124101](https://github.com/user-attachments/assets/bbadeaab-ff1f-4b47-8607-a50880593554)
+
+
+
+
+
+
+
 ## Features
 
 1. **Login System:**
